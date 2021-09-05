@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <title>Marathon regestration form task</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="header1">
+            <h1>The Great Big Marathon</h1>
+        </div>
+        <div class="header2">
+            <h2>Registration form</h2>
+        </div>
+
+
+        <div class="regForm">
+            <Form>
+                <label for="fName">First Name</label>
+                <input type="text" name="firstName" id="fName" required>
+                <label for="lName">Last Name</label>
+                <input type="text" name="lastName" id="lName">
+
+                <br>
+
+                <label for="raceType">Please select race type:</label>
+
+                <br>
+
+                <input type="radio" name="raceType" id="fun" value="fun" required>
+                <label for="fun">Fun Run</label>
+
+                <br>
+
+                <input type="radio" name="raceType" id="half" value="half">
+                <label for="half">Half Marathon</label>
+
+                <br>
+
+                <input type="radio" name="raceType" id="full" value="full">
+                <label for="full">Full Marathon</label>
+
+                <br>
+
+                <label for="Email">Email</label>
+                <input type="text" name="Email" id="Email" pattern=".+@" placeholder="steve@steve.com"
+                    title="Please provide a valid email address" required>
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" minlength="5" maxlength="40" required>
+
+                <br>
+
+                <label for="age">Select age group</label>
+
+                <br>
+
+                <select name="ageGroup" id="age" required>
+                    <option value="U18">Under 18</option>
+                    <option value="1825">18-25</option>
+                    <option value="25">25+</option>
+                </select>
+
+                <br>
+
+                <button type="submit">Register</button>
+
+            </Form>
+        </div>
+    </div>
+
+    <Footer>
+
+        <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Twitch.tv</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Reddit</a></li>
+        </ul>
+
+    </Footer>
+</body>
+
+</html>
